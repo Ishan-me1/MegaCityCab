@@ -36,7 +36,7 @@ button:hover {
 }
 /* Style for the paragraph containing the link */
 p {
-    font-size: 8px;
+    font-size: 12px;
     color: #333; /* Dark gray color for the text */
     text-align: center; /* Center align the text */
 }
@@ -53,3 +53,218 @@ a:hover {
     color: #0056b3; /* Darker blue color on hover */
     text-decoration: underline; /* Underline the link on hover */
 }
+
+
+/* Admin css*/
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Admin Dashboard Specific Styles */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #34495e;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Content Box */
+div {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+div h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+div p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Logout Button */
+div a.logout {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div a.logout:hover {
+    background-color: #c0392b;
+}
+
+/* manager css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Manager Dashboard Specific Styles */
+h1 {
+    color: #2d3436;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #16a085;
+}
+
+a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Content Box */
+div {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+div h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+div p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Logout Button */
+div a.logout {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div a.logout:hover {
+    background-color: #d35400;
+}
+
+/* USER css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* User Dashboard Specific Styles */
+h1 {
+    color: #2980b9;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #1abc9c;
+}
+
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #16a085;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Content Box */
+div {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+div h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+div p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Logout Button */
+div a.logout {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div a.logout:hover {
+    background-color: #2980b9;
+}
+
+
+
+

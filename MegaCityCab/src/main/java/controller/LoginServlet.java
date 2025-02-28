@@ -17,7 +17,8 @@ import dao.UserDAO;
  */
 @WebServlet("/Loginservlet")
 public class LoginServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L; 
+    private static final long serialVersionUID = 1L;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
@@ -26,11 +27,21 @@ public class LoginServlet extends HttpServlet {
         User user = dao.validateUser(username, password);
 
         if (user != null) {
+            // Set the user in session
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
-            response.sendRedirect("dashboard.jsp");
+
+            // Redirect based on role
+            String role = user.getRole();
+            if ("admin".equals(role)) {
+                response.sendRedirect("/MegaCityCab/views/admindashboard.jsp");
+            } else if ("manager".equals(role)) {
+                response.sendRedirect("/MegaCityCab/views/managerdashboard.jsp");
+            } else {
+                response.sendRedirect("/MegaCityCab/views/homedashboard.jsp");  // Default to user dashboard
+            }
         } else {
             response.sendRedirect("login.jsp?error=Invalid Credentials");
         }
     }
-}
+}  

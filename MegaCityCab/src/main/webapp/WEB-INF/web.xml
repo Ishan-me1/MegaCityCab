@@ -37,7 +37,30 @@
     <url-pattern>/Loginservlet</url-pattern>
   </servlet-mapping>
 
- 
+<!-- BookingServlet Mapping -->
+<servlet>
+    <servlet-name>BookingServlet</servlet-name>
+    <servlet-class>controller.BookingServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BookingServlet</servlet-name>
+    <url-pattern>/BookingServlet</url-pattern>
+</servlet-mapping>
+
+
+  <!-- CustomerRegisterServlet Mapping -->
+  <servlet>
+    <servlet-name>CustomerRegisterServlet</servlet-name>
+    <servlet-class>controller.CustomerRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerRegisterServlet</servlet-name>
+    <url-pattern>/CustomerRegisterServlet</url-pattern>
+  </servlet-mapping>
+
+ <session-config>
+    <session-timeout>20</session-timeout> <!-- Time in minutes -->
+</session-config>
 
 </web-app>
 </element>

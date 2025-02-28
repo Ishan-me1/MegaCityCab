@@ -9,18 +9,14 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-/**
- * Servlet implementation class LogoutServlet
- */
-@WebServlet("/Logoutservlet")
+@WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L; 
+	private static final long serialVersionUID = 1L;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession(false); // Don't create a new session if it doesn't exist
         if (session != null) {
-            session.invalidate();
+            session.invalidate(); // Invalidate the session to log the user out
         }
-        response.sendRedirect("login.jsp?msg=Logged Out Successfully");
+        response.sendRedirect("views/login.jsp?msg=Logged%20out%20successfully");
     }
 }
-
